@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+/build-*
+Source\ITP-Project.pro.user
+Documentation/html/

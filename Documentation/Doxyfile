@@ -1,0 +1,41 @@
+# Doxygen configuration file
+
+# Project information
+PROJECT_NAME           = ITP-Project Framework
+PROJECT_NUMBER         = 6.9
+PROJECT_BRIEF          = Documentation for my / our ITP-Framework
+
+# Output formats
+GENERATE_HTML = YES
+GENERATE_LATEX = NO
+
+# Input
+RECURSIVE = YES
+INPUT = ./Source
+
+# Output directories
+OUTPUT_DIRECTORY = .
+HTML_OUTPUT            = ./Documentation/html
+
+# File patterns
+FILE_PATTERNS          = *.cpp \
+                         *.h
+
+# Exclude directories
+EXCLUDE_PATTERNS       = */build/* \
+                         */vendor/*
+
+# Source code browsing
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Examples
+EXAMPLE_PATH= ../Source/examples
+
+# Markdown options
+MARKDOWN_SUPPORT       = YES
+MARKDOWN_AUTOLINKS     = YES
+MARKDOWN_USE_ROFF      = NO
+
+# Use the Qt help generator for Qt-based source code
+USE_QTHELP = YES
