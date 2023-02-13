@@ -1,5 +1,6 @@
 #include "websocketserver.h"
 
+
 QList<QWebSocket *> WebSocketServer::m_sockets;
 
 WebSocketServer::WebSocketServer(quint16 port, QObject *parent) :
@@ -9,6 +10,9 @@ WebSocketServer::WebSocketServer(quint16 port, QObject *parent) :
     if (!m_socketServer.listen(QHostAddress::Any, port)) {
         qFatal("Failed to open web socket server.");
     }
+
+    pmm = new PlayerCommuniManager();
+
 
     m_instance = this;
 
@@ -35,20 +39,46 @@ void WebSocketServer::onNewConnection() {
 
     // Give every Connection an ID and send that ID to Player
     // Player will save that ID, it will act as an authentication Token
-    QString playerId = QUuid::createUuid().toString();
+    QString playerId = QUuid::createUuid().toString().mid(1, 36).toUpper();
+
+    qDebug() << "PlayerID: " << playerId;
+
+    socket->setProperty("UUID", playerId);
+
+    try {
+            QueueManager::addPlayer(playerId);
+        } catch (QueueFullException &e) {
+            qDebug() << e.what();
+        }
     std::map<std::string, JSONUtils::Value> data{
         {"code", 200},
         {"UUID", playerId.toStdString()},
         {"message", "Connection established to SocketServer!"}
     };
+
+    Game::getInstance()->createPlayer(playerId);
     socket->sendTextMessage(QString::fromStdString(JSONUtils::generateJSON(data)));
 
     // Connect to the socket's signals
-    connect(socket, &QWebSocket::textMessageReceived, this, &WebSocketServer::onTextMessageReceived);
+    connect(socket, &QWebSocket::textMessageReceived, pmm, &PlayerCommuniManager::onTextmessageReceived);
     connect(socket, &QWebSocket::binaryMessageReceived, this, &WebSocketServer::onBinaryMessageReceived);
     connect(socket, &QWebSocket::disconnected, this, &WebSocketServer::onSocketDisconnected);
 
     m_sockets.append(socket);
+    // If queue is full
+        if (QueueManager::getQueueSize() == 4) {
+    // TODO Besprechen wie wir das Spiel evtl. auch mit weniger Spieler starten können, z.B. Start Btn)
+            // Send the GameID to the Players
+            std::map<std::string, JSONUtils::Value> data{
+                {"code", 201},
+                {"message", "GameID sent to Players!"},
+                {"gameId", QueueManager::getGameId().toString().toStdString()}
+            };
+
+            Game::getInstance()->start();
+
+            this->broadcast(QString::fromStdString(JSONUtils::generateJSON(data)));
+        }
 }
 
 void WebSocketServer::onTextMessageReceived(QString message) {
@@ -58,6 +88,17 @@ void WebSocketServer::onTextMessageReceived(QString message) {
 
 void WebSocketServer::onBinaryMessageReceived(QByteArray message) {
     qDebug() << "Received binary message of size" << message.size() << "bytes";
+
+    // Send a response back to the client
+        QWebSocket *senderSocket = qobject_cast<QWebSocket *>(sender());
+        if (senderSocket) {
+            std::map<std::string, JSONUtils::Value> data{
+              {"code", 202},
+              {"message", "Received Binary Message!"},
+              {"received_message", message.toStdString()}
+            };
+            senderSocket->sendBinaryMessage(QString::fromStdString(JSONUtils::generateJSON(data)).toUtf8());
+        }
 }
 
 void WebSocketServer::onSocketDisconnected() {
@@ -78,6 +119,9 @@ void WebSocketServer::onSocketDisconnected() {
         socket->sendTextMessage(QString::fromStdString(JSONUtils::generateJSON(data)));
     }
 
+    // Stop Game
+    Game::getInstance()->stop();
+
     // Disconnected all Users
 
     for (QWebSocket *socket : m_sockets) {
@@ -85,6 +129,10 @@ void WebSocketServer::onSocketDisconnected() {
     }
 
     m_sockets.clear();
+
+    //Reset the Queue & Game
+    Game::getInstance()->reset();
+    QueueManager::resetQueue();
 
     // Delete the socket
     socket->deleteLater();
@@ -97,3 +145,14 @@ void WebSocketServer::broadcast(const QString &message) {
         socket->sendTextMessage(message);
     }
 }
+void WebSocketServer::sendToSocket(QString UUID, const QString &message){
+    qDebug() << message;
+     for(auto socket: m_sockets){
+         qDebug() << socket->property("UUID").toString();
+         qDebug() << UUID;
+        if (socket->property("UUID").toString() == UUID){
+            socket->sendTextMessage(message);
+        }
+     }
+}
+

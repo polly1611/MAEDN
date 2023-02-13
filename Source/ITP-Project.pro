@@ -14,6 +14,8 @@ SOURCES += \
         mainwindow.cpp \
         pitch.cpp \
         player.cpp \
+        playercommunimanager.cpp \
+        queuemanager.cpp \
         routes/httptestroute.cpp \
         routes/jsontestroute.cpp \
         server.cpp \
@@ -33,6 +35,8 @@ HEADERS += \
     mainwindow.h \
     pitch.h \
     player.h \
+    playercommunimanager.h \
+    queuemanager.h \
     routes/httptestroute.h \
     routes/iroutehandler.h \
     routes/jsontestroute.h \

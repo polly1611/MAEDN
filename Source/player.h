@@ -7,26 +7,22 @@
 
 using namespace  std;
 
-enum Color
-{
+enum Color {
   RED, BLUE, GREEN, YELLOW
 };
 
-struct Piece
-{
+struct Piece {
 private:
     QString pieceID;
 public:
     int fieldPosition;
 };
 
-struct Player
-{
+struct Player {
 public:
    QString playerID;
    Piece *PieceList[4];
    Color Color;
-
 };
 
 #endif // PLAYER_H

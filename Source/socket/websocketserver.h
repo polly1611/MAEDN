@@ -9,7 +9,10 @@
 
 #include <QUuid>
 
-#include "../utils/jsonutils.h"
+#include "utils/jsonutils.h"
+#include "queuemanager.h"
+#include "playercommunimanager.h"
+#include "game.h"
 
 /**
  * @class WebSocketServer
@@ -46,6 +49,8 @@ public:
 
     // Add Docs
     static WebSocketServer& getInstance(quint16 port = 8080);
+
+    void sendToSocket(QString UUID,const QString &message);
 
 private slots:
     /**
@@ -94,6 +99,12 @@ private:
      * It is also used to access the singleton instance of the WebSocketServer class from other parts of the program.
      */
     static WebSocketServer* m_instance;
+
+    /**
+    * @brief The PlayerCommunicationManager instance
+    * This member variable represents the PlayerCommunicationManager instance.
+    */
+    PlayerCommuniManager *pmm;
 
 };
 

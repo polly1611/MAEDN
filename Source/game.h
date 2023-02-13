@@ -5,6 +5,9 @@
 #include <QString>
 #include <player.h>
 
+#include "socket/websocketserver.h"
+
+
 class Game : public QObject
 {
     Q_OBJECT
@@ -12,14 +15,17 @@ class Game : public QObject
 private:
     explicit Game(QObject *parent = nullptr);
     static Game *m_instance;
-    Player *PlayerList[4];
+    QString rememberToken;
+
 
 public:
+    Player *PlayerList[4];
     void update();
     void reset();
     void start();
     void stop();
-    int rollDice();
+    void rollDice(QString playerId);
+    void createPlayer(QString playerId);
     void setPlayerPiecePosition(Player *Player, Piece *Piece, int Position);
     static Game* getInstance();
 
