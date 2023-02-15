@@ -23,21 +23,12 @@ void PlayerCommuniManager::onTextmessageReceived(const QString &message)
             qDebug() << "Method 110 called";
             Game::getInstance()->rollDice(playerId);
 
-            /*
-            //Gets: player.ID
-             for(auto PlayerId: Game::getInstance()->PlayerList)
-             {
-               if (playerId == PlayerId->playerID){
-               Game::getInstance()->rollDice(playerId);
-
-              }
-              }
-              */
-
         case 120: //Move Piece
              // Gets: playerID, rememberToken
-             for(auto Player: Game::getInstance()->PlayerList){
-             }
+             playerId = jsonObject["player"].toString();
+
+             qDebug() << "Method 120 called";
+             //Game::getInstance()->setPlayerPiecePosition(playerId, pieceId, fieldPosition);
 
         break;
         default:

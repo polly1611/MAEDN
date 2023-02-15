@@ -2,6 +2,7 @@
 #include "player.h"
 
 #include <QRandomGenerator>
+#include <QList>
 
 Game *Game::m_instance = nullptr;
 
@@ -19,12 +20,35 @@ Game::Game(QObject *parent)
 
 }
 void Game::createPlayer(QString playerId)
-{}
+{
+    for (int i = 0; i < 4; i++) {
+     if (PlayerList[i]->isEmpty()){
+         Player player;
+         player.playerID = playerId;
+
+         if (i == 0){
+         player.Color = Color::RED;
+         } else if (i == 1){
+         player.Color = Color::BLUE;
+         } else if (i == 2){
+         player.Color = Color::GREEN;
+         } else if (i == 3){
+         player.Color = Color::YELLOW;
+         }
+
+          for (int j = 0; j < 4; j++) {
+          Piece piece;
+          piece.pieceID = QUuid::createUuid().toString();
+          player.PieceList[j]->append(piece);
+          }
+        PlayerList[i]->append(player);
+        break; // Um nur einen Spieler zu erstellen
+        }
+    }
+ }
 
 void Game::update()
 {
-    // Die Prüfung, ob der Spielzug korrekt ist
-
     // Prüfung, ob das Spielfeld bereits besetzt ist und Wurf der vorherigen Figur
 
     // Prüfung ob der Spieler einen weitern Zug tätigen darf
@@ -35,7 +59,7 @@ void Game::reset()
 }
 void Game:: start()
 {
-        // Spieler, Figuren und Häuser und Startpositionen festlegen
+    // Spieler, Figuren und Häuser und Startpositionen festlegen
 
 }
 void Game::stop()
@@ -64,8 +88,7 @@ void Game::rollDice(QString playerId)
     WebSocketServer::getInstance().sendToSocket(playerId, QString::fromStdString(JSONUtils::generateJSON(data)));
 
 
-
-    //Ausgabe im Spielfeld in einem Textfeld fehlt
+    //Ausgabe im Spielfeld in einem Textfeld fehlt noch
 }
 void Game::setPlayerPiecePosition(Player *Player, Piece *Piece, int Position)
 {

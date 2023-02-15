@@ -12,13 +12,11 @@ SOURCES += \
         game.cpp \
         main.cpp \
         mainwindow.cpp \
-        pitch.cpp \
         player.cpp \
         playercommunimanager.cpp \
         queuemanager.cpp \
         routes/httptestroute.cpp \
         routes/jsontestroute.cpp \
-        server.cpp \
         socket/websocketserver.cpp \
         utils/jsonutils.cpp \
         utils/mariadb.cpp \
@@ -33,14 +31,12 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     game.h \
     mainwindow.h \
-    pitch.h \
     player.h \
     playercommunimanager.h \
     queuemanager.h \
     routes/httptestroute.h \
     routes/iroutehandler.h \
     routes/jsontestroute.h \
-    server.h \
     socket/websocketserver.h \
     utils/jsonutils.h \
     utils/mariadb.h \

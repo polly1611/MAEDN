@@ -4,6 +4,7 @@
 #include <QObject>
 #include <server.h>
 #include <iostream>
+#include <QList>
 
 using namespace  std;
 
@@ -12,16 +13,16 @@ enum Color {
 };
 
 struct Piece {
-private:
-    QString pieceID;
+
 public:
-    int fieldPosition;
+    QString pieceID;
+    int fieldPosition = 0;
 };
 
 struct Player {
 public:
    QString playerID;
-   Piece *PieceList[4];
+   QList <Piece> *PieceList[4];
    Color Color;
 };
 

@@ -12,13 +12,6 @@
 #include "routes/jsontestroute.h"
 #include "routes/httptestroute.h"
 
-// Game
-#include <server.h>
-
-// Window
-#include <mainwindow.h>
-#include <QApplication>
-
 int main(int argc, char *argv[])
 {
     QCoreApplication app(argc, argv);
@@ -41,9 +34,6 @@ int main(int argc, char *argv[])
         qCritical() << "Failed to start server:" << server.errorString();
         return 1;
     }
-    QApplication a(argc, argv);
-    MainWindow mw;
-    mw.show();
-    return a.exec();
+
     return app.exec();
 }

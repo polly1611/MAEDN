@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QString>
+#include <QList>
 #include <player.h>
 
 #include "socket/websocketserver.h"
@@ -19,7 +20,7 @@ private:
 
 
 public:
-    Player *PlayerList[4];
+    QList <Player> *PlayerList[4];
     void update();
     void reset();
     void start();
