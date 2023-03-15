@@ -24,11 +24,13 @@ void PlayerCommuniManager::onTextmessageReceived(const QString &message)
             Game::getInstance()->rollDice(playerId);
 
         case 120: //Move Piece
-             // Gets: playerID, rememberToken
+             // Gets: playerID, rememberToken??
              playerId = jsonObject["player"].toString();
 
              qDebug() << "Method 120 called";
              //Game::getInstance()->setPlayerPiecePosition(playerId, pieceId, fieldPosition);
+
+             //Überlegen, wie das Spielfeld aufgebaut wird aufgebaut wird
 
         break;
         default:

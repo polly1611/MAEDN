@@ -66,8 +66,8 @@ void WebSocketServer::onNewConnection() {
 
     m_sockets.append(socket);
     // If queue is full
-        if (QueueManager::getQueueSize() == 4) {
-    // TODO Besprechen wie wir das Spiel evtl. auch mit weniger Spieler starten können, z.B. Start Btn)
+        if (QueueManager::getQueueSize() == 4) {     // TODO Falls noch Zeit ist prüfen, ob wir das Spiel auch mit weniger Spieler starten wollen.
+
             // Send the GameID to the Players
             std::map<std::string, JSONUtils::Value> data{
                 {"code", 201},

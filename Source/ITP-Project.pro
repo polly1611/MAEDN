@@ -10,6 +10,7 @@ QT += websockets
 
 SOURCES += \
         game.cpp \
+        gamemanager.cpp \
         main.cpp \
         mainwindow.cpp \
         player.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
         routes/httptestroute.cpp \
         routes/jsontestroute.cpp \
         socket/websocketserver.cpp \
+        startwindow.cpp \
         utils/jsonutils.cpp \
         utils/mariadb.cpp \
         utils/ws_utils.cpp \
@@ -30,6 +32,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     game.h \
+    gamemanager.h \
     mainwindow.h \
     player.h \
     playercommunimanager.h \
@@ -38,10 +41,12 @@ HEADERS += \
     routes/iroutehandler.h \
     routes/jsontestroute.h \
     socket/websocketserver.h \
+    startwindow.h \
     utils/jsonutils.h \
     utils/mariadb.h \
     utils/ws_utils.h \
     ws/webserver.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    startwindow.ui

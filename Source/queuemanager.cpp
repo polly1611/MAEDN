@@ -25,7 +25,7 @@ void QueueManager::addPlayer(QString playerId)
         return;
     }
 
-    if((queue.size() >= 2)&&(queue.size() <= 4)) //fragen ob diese Änderung sind macht
+    if((queue.size() == 4))
     {
         gameId = QUuid::createUuid();
         games[gameId] = queue;

@@ -2,11 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <pitch.h>
+#include <QLabel>
+
 
 namespace Ui { class MainWindow;}
 
-
+class GameManager;
 
 class MainWindow : public QMainWindow
 {
@@ -15,13 +16,35 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent=nullptr);
     ~MainWindow();
+    void setGameManager(GameManager *gm);
+    void move(int diceValue, QString BtnName);
+    void sendName(QString name);
 
+
+static int playerCount;
 private:
 
     Ui::MainWindow *ui;
+    GameManager *gm;
 
- public slots:
-    void quit();
+ int PlayerNo;
+ int diceValue;
+ int goTo;
+ QLabel Field[44];
+
+
+
+signals:
+ void clicked();
+ void rolldice ();
+
+public slots:
+    void diceBtn_clicked();
+    void A1Btn_clicked();
+    void A2Btn_clicked();
+    void B1Btn_clicked();
+    void B2Btn_clicked();
+
 
 };
 
