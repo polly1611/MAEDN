@@ -27,7 +27,7 @@
    <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="houseB4">
+   <widget class="QLabel" name="house_B4">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -55,7 +55,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="houseB3">
+   <widget class="QLabel" name="house_B3">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -83,7 +83,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="houseB1">
+   <widget class="QLabel" name="house_B1">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -111,7 +111,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="house_C3">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -137,7 +137,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="house_C2">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -164,7 +164,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="house_C4">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -190,7 +190,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="house_C1">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -217,7 +217,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="house_D4">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -243,7 +243,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="house_D2">
     <property name="geometry">
      <rect>
       <x>870</x>
@@ -269,7 +269,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
+   <widget class="QLabel" name="house_D1">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -295,7 +295,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="house_D3">
     <property name="geometry">
      <rect>
       <x>870</x>
@@ -321,7 +321,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="houseA4">
+   <widget class="QLabel" name="house_A4">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -347,7 +347,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="houseA3">
+   <widget class="QLabel" name="house_A3">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -373,7 +373,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="houseA1">
+   <widget class="QLabel" name="house_A1">
     <property name="geometry">
      <rect>
       <x>870</x>
@@ -408,6 +408,9 @@
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>25</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -434,6 +437,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>26</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -462,6 +468,9 @@ border: 2px rgb(255,255,0);
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>27</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -488,6 +497,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>28</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -519,6 +531,9 @@ border: 2px rgb(255,255,0);
       <height>41</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>29</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -545,6 +560,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>30</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -573,6 +591,9 @@ border: 2px rgb(255,255,0);
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>31</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 204, 0);
   border-radius: 20px;
@@ -598,6 +619,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>32</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -626,6 +650,9 @@ border: 2px rgb(255,255,0);
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>33</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -644,7 +671,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="field_34">
+   <widget class="QLabel" name="field34">
     <property name="geometry">
      <rect>
       <x>590</x>
@@ -652,6 +679,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>34</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -680,6 +710,9 @@ border: 2px rgb(255,255,0);
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>35</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -706,6 +739,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>36</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -734,6 +770,9 @@ border: 2px rgb(255,255,0);
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>37</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -760,6 +799,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>38</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -788,6 +830,9 @@ border: 2px rgb(255,255,0);
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>39</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -814,6 +859,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>40</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -935,7 +983,7 @@ border: 2px rgb(255,255,0);
      </rect>
     </property>
     <property name="toolTip">
-     <string>4</string>
+     <string>3</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -1475,6 +1523,9 @@ border: 2px rgb(255,255,0);
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>22</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -1501,6 +1552,9 @@ border: 2px rgb(255,255,0);
       <width>40</width>
       <height>40</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>23</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
@@ -1529,6 +1583,9 @@ border: 2px rgb(255,255,0);
       <height>40</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>24</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255,255,255);
 border: 2px rgb(255,255,0);
@@ -1547,7 +1604,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="houseB2">
+   <widget class="QLabel" name="house_B2">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -1575,7 +1632,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="houseA2">
+   <widget class="QLabel" name="house_A2">
     <property name="geometry">
      <rect>
       <x>870</x>
@@ -1601,7 +1658,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="finishA1">
+   <widget class="QLabel" name="finish_A1">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -1627,7 +1684,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="finishA2">
+   <widget class="QLabel" name="finish_A2">
     <property name="geometry">
      <rect>
       <x>730</x>
@@ -1653,7 +1710,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="finishA3">
+   <widget class="QLabel" name="finish_A3">
     <property name="geometry">
      <rect>
       <x>660</x>
@@ -1679,7 +1736,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_60">
+   <widget class="QLabel" name="finish_C1">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -1706,7 +1763,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_61">
+   <widget class="QLabel" name="finish_C2">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -1733,7 +1790,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_62">
+   <widget class="QLabel" name="finish_C3">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -1760,7 +1817,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_63">
+   <widget class="QLabel" name="finish_D1">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -1786,7 +1843,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_64">
+   <widget class="QLabel" name="finish_D2">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -1812,7 +1869,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_65">
+   <widget class="QLabel" name="finish_D3">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -1838,7 +1895,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="finishB1">
+   <widget class="QLabel" name="finish_B1">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -1866,7 +1923,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="finishB2">
+   <widget class="QLabel" name="finish_B2">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -1894,7 +1951,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="finishB3">
+   <widget class="QLabel" name="finish_B3">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -2036,7 +2093,7 @@ background-color: rgb(255,255,255,0);
      <string>   D</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_73">
+   <widget class="QLabel" name="finish_D4">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -2056,7 +2113,7 @@ background-color: rgb(255,255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_74">
+   <widget class="QLabel" name="finish_C4">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -2077,7 +2134,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="finishB4">
+   <widget class="QLabel" name="finish_B4">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -2099,7 +2156,7 @@ border: 2px rgb(255,255,0);
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="finishA4">
+   <widget class="QLabel" name="finish_A4">
     <property name="geometry">
      <rect>
       <x>590</x>
@@ -2553,6 +2610,9 @@ color: black;</string>
       <width>31</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
     </property>
     <property name="frameShape">
      <enum>QFrame::HLine</enum>
@@ -3091,259 +3151,11 @@ color: black;</string>
      <number>3</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_77">
-    <property name="geometry">
-     <rect>
-      <x>177</x>
-      <y>28</y>
-      <width>26</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255,255,0);
-color: black;
-text-align: center;
-border: 3px solid black;
-border-radius: 20px;
-min-height: 20px;
-min-width: 20px;
-</string>
-    </property>
-    <property name="text">
-     <string>C</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_78">
-    <property name="geometry">
-     <rect>
-      <x>247</x>
-      <y>27</y>
-      <width>26</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255,255,0);
-color: black;
-text-align: center;
-border: 3px solid black;
-border-radius: 20px;
-min-height: 20px;
-min-width: 20px;
-</string>
-    </property>
-    <property name="text">
-     <string>C</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_79">
-    <property name="geometry">
-     <rect>
-      <x>177</x>
-      <y>97</y>
-      <width>26</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255,255,0);
-color: black;
-text-align: center;
-border: 3px solid black;
-border-radius: 20px;
-min-height: 20px;
-min-width: 20px;
-</string>
-    </property>
-    <property name="text">
-     <string>C</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_80">
-    <property name="geometry">
-     <rect>
-      <x>248</x>
-      <y>97</y>
-      <width>26</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255,255,0);
-color: black;
-text-align: center;
-border: 3px solid black;
-border-radius: 20px;
-min-height: 20px;
-min-width: 20px;
-</string>
-    </property>
-    <property name="text">
-     <string>C</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_81">
-    <property name="geometry">
-     <rect>
-      <x>807</x>
-      <y>28</y>
-      <width>26</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(102,204,0);
-color: black;
-text-align: center;
-border: 3px solid black;
-border-radius: 20px;
-min-height: 20px;
-min-width: 20px;
-</string>
-    </property>
-    <property name="text">
-     <string>D</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_82">
-    <property name="geometry">
-     <rect>
-      <x>877</x>
-      <y>98</y>
-      <width>26</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(102,204,0);
-color: black;
-text-align: center;
-border: 3px solid black;
-border-radius: 20px;
-min-height: 20px;
-min-width: 20px;
-</string>
-    </property>
-    <property name="text">
-     <string>D</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_83">
-    <property name="geometry">
-     <rect>
-      <x>807</x>
-      <y>98</y>
-      <width>26</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(102,204,0);
-color: black;
-text-align: center;
-border: 3px solid black;
-border-radius: 20px;
-min-height: 20px;
-min-width: 20px;
-</string>
-    </property>
-    <property name="text">
-     <string>D</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_84">
-    <property name="geometry">
-     <rect>
-      <x>877</x>
-      <y>28</y>
-      <width>26</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(102,204,0);
-color: black;
-text-align: center;
-border: 3px solid black;
-border-radius: 20px;
-min-height: 20px;
-min-width: 20px;
-</string>
-    </property>
-    <property name="text">
-     <string>D</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="A1">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>660</y>
+      <x>875</x>
+      <y>656</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -3355,8 +3167,8 @@ min-width: 20px;
    <widget class="QPushButton" name="A2">
     <property name="geometry">
      <rect>
-      <x>880</x>
-      <y>730</y>
+      <x>875</x>
+      <y>726</y>
       <width>31</width>
       <height>29</height>
      </rect>
@@ -3368,8 +3180,8 @@ min-width: 20px;
    <widget class="QPushButton" name="B1">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>730</y>
+      <x>245</x>
+      <y>726</y>
       <width>31</width>
       <height>29</height>
      </rect>
@@ -3381,8 +3193,8 @@ min-width: 20px;
    <widget class="QPushButton" name="B2">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>730</y>
+      <x>175</x>
+      <y>726</y>
       <width>31</width>
       <height>29</height>
      </rect>
@@ -3512,6 +3324,162 @@ color: rgb(255, 255, 255);</string>
       <width>261</width>
       <height>51</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B4">
+    <property name="geometry">
+     <rect>
+      <x>245</x>
+      <y>656</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B3">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>656</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="A4">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>656</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="A3">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>726</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="D3">
+    <property name="geometry">
+     <rect>
+      <x>875</x>
+      <y>95</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="D4">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>95</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="D1">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>26</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="D2">
+    <property name="geometry">
+     <rect>
+      <x>875</x>
+      <y>26</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="C3">
+    <property name="geometry">
+     <rect>
+      <x>244</x>
+      <y>25</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="C4">
+    <property name="geometry">
+     <rect>
+      <x>244</x>
+      <y>95</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="C1">
+    <property name="geometry">
+     <rect>
+      <x>174</x>
+      <y>95</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="C2">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>25</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C</string>
     </property>
    </widget>
   </widget>

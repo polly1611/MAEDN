@@ -30,7 +30,7 @@ private:
  int PlayerNo;
  int diceValue;
  int goTo;
- QLabel Field[44];
+ QLabel field[40];
 
 
 
@@ -42,10 +42,12 @@ public slots:
     void diceBtn_clicked();
     void A1Btn_clicked();
     void A2Btn_clicked();
+    void A3Btn_clicked();
+    void A4Btn_clicked();
     void B1Btn_clicked();
     void B2Btn_clicked();
-
-
+    void B3Btn_clicked();
+    void B4Btn_clicked();
 };
 
 #endif // MAINWINDOW_H
