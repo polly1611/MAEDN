@@ -21,11 +21,13 @@ Game::Game(QObject *parent)
 }
 void Game::createPlayer(QString playerId)
 {
+    //Spieler erstellen
     for (int i = 0; i < 4; i++) {
      if (PlayerList[i]->isEmpty()){
          Player player;
          player.playerID = playerId;
 
+         //Vergabe der Farben
          if (i == 0){
          player.Color = Color::RED;
          } else if (i == 1){
@@ -36,9 +38,10 @@ void Game::createPlayer(QString playerId)
          player.Color = Color::YELLOW;
          }
 
+          //Erstellen der Figuren
           for (int j = 0; j < 4; j++) {
           Piece piece;
-          piece.pieceID = QUuid::createUuid().toString();
+          piece.pieceID =   QUuid::createUuid().toString();
           player.PieceList[j]->append(piece);
           }
         PlayerList[i]->append(player);
@@ -68,13 +71,13 @@ void Game::stop()
 }
 void Game::rollDice(QString playerId)
 {
-    //Würfel
+    //Erstellen von der gewürfelten Zahl mit Zufallsgenerator
     int value;
     value = QRandomGenerator::global()->bounded(1,7);
 
     qDebug() << value;
 
-    rememberToken = QUuid::createUuid().toString();
+    rememberToken = QUuid::createUuid().toString(); //Token erstellen für die Server/Client Kommunikation
 
     qDebug() << rememberToken;
 

@@ -29,3 +29,13 @@ void GameManager::updateMove(int diceValue, QString BtnName)
     mw1->move(diceValue, BtnName);
     mw2->move(diceValue, BtnName);
 }
+void GameManager::setCSVFile (csvFile * csv)
+{
+    // Initialisierung der CSV-Datei
+    this->csv = csv;
+}
+void GameManager::update(QString VarButton, int oldfieldID, int diceValue)
+{
+
+}
+

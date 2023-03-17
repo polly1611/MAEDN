@@ -28,6 +28,7 @@ void StartWindow::startBtn_clicked()
 
 void StartWindow::endBtn_clicked()
 {
+    //Schließt alle Fenster komplett
     mw->close();
     this->close();
 }

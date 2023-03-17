@@ -6,6 +6,7 @@
 #include <mainwindow.h>
 
 class MainWindow;
+class csvFile;
 
 class GameManager: public QObject
 {
@@ -14,19 +15,19 @@ private:
     QString name;
     MainWindow * mw1 = nullptr;
     MainWindow * mw2 = nullptr;
+    csvFile * csv = nullptr;
 
 public:
     explicit GameManager(QObject *parent = nullptr);
     void setMainWindowA (MainWindow *mw1);
     void setMainWindowB (MainWindow *mw2);
-    void updateMove(int diceValue, QPushButton *VarButton);
+    void setCSVFile (csvFile * csv);
 
-signals:
-    void clicked();
 
 public slots:
     void sendName(QString name);
     void updateMove(int diceValue, QString BtnName);
+    void update(QString VarButton, int oldfieldID, int diceValue);
 
 
 };

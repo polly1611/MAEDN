@@ -13,15 +13,6 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
-public:
-    MainWindow(QWidget *parent=nullptr);
-    ~MainWindow();
-    void setGameManager(GameManager *gm);
-    void move(int diceValue, QString BtnName);
-    void sendName(QString name);
-
-
-static int playerCount;
 private:
 
     Ui::MainWindow *ui;
@@ -29,14 +20,20 @@ private:
 
  int PlayerNo;
  int diceValue;
- int goTo;
- QLabel field[40];
+ int goTo; 
 
+public:
+static int playerCount;
 
+    MainWindow(QWidget *parent=nullptr);
+    ~MainWindow();
+    void setGameManager(GameManager *gm);
+    void move(int diceValue, QString BtnName);
+    void sendName(QString name);
+    void update(QString name, QString VarButton, int oldfieldID, int diceValue);
 
 signals:
- void clicked();
- void rolldice ();
+  void rolldice ();
 
 public slots:
     void diceBtn_clicked();

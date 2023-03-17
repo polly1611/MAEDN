@@ -11,16 +11,16 @@ class StartWindow : public QMainWindow
 {
     Q_OBJECT
 
+private:
+    Ui::StartWindow *ui;
+    MainWindow *mw;
+    GameManager *gm;
+
 public:
      StartWindow(QWidget *parent = nullptr);
     ~StartWindow();
      StartWindow (MainWindow *mw);
      void setGameManager(GameManager *gm);
-
-private:
-    Ui::StartWindow *ui;
-    MainWindow *mw;
-    GameManager *gm;
 
 public slots:
     void startBtn_clicked();

@@ -9,21 +9,11 @@ CONFIG -= app_bundle
 QT += websockets
 
 SOURCES += \
-        game.cpp \
+        csvfile.cpp \
         gamemanager.cpp \
         main.cpp \
         mainwindow.cpp \
-        player.cpp \
-        playercommunimanager.cpp \
-        queuemanager.cpp \
-        routes/httptestroute.cpp \
-        routes/jsontestroute.cpp \
-        socket/websocketserver.cpp \
-        startwindow.cpp \
-        utils/jsonutils.cpp \
-        utils/mariadb.cpp \
-        utils/ws_utils.cpp \
-        ws/webserver.cpp
+        startwindow.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -31,21 +21,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    game.h \
+    csvfile.h \
     gamemanager.h \
     mainwindow.h \
-    player.h \
-    playercommunimanager.h \
-    queuemanager.h \
-    routes/httptestroute.h \
-    routes/iroutehandler.h \
-    routes/jsontestroute.h \
-    socket/websocketserver.h \
-    startwindow.h \
-    utils/jsonutils.h \
-    utils/mariadb.h \
-    utils/ws_utils.h \
-    ws/webserver.h
+    startwindow.h
 
 FORMS += \
     mainwindow.ui \

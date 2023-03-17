@@ -3160,6 +3160,12 @@ color: black;</string>
       <height>31</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="text">
      <string>A</string>
     </property>
@@ -3172,6 +3178,9 @@ color: black;</string>
       <width>31</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 235, 235);</string>
     </property>
     <property name="text">
      <string>A</string>
@@ -3219,7 +3228,7 @@ color: black;</string>
       <x>1090</x>
       <y>570</y>
       <width>101</width>
-      <height>121</height>
+      <height>101</height>
      </rect>
     </property>
    </widget>
@@ -3361,6 +3370,9 @@ color: rgb(255, 255, 255);</string>
       <height>29</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 235, 235);</string>
+    </property>
     <property name="text">
      <string>A</string>
     </property>
@@ -3373,6 +3385,9 @@ color: rgb(255, 255, 255);</string>
       <width>31</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 235, 235);</string>
     </property>
     <property name="text">
      <string>A</string>
